@@ -3,8 +3,8 @@ import { FiglioComponent } from '../figlio/figlio.component';
 
 @Component({
   selector: 'app-padre',
-  templateUrl: './padre.component.html',
-  styleUrls: ['./padre.component.css'],
+  templateUrl: 'padre.component.html',
+  styleUrls: ['padre.component.css'],
 })
 export class PadreComponent implements OnInit {
   constructor() {}
