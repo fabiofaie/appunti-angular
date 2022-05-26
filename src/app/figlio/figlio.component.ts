@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class FiglioComponent {
   constructor() {}
 
-  count = 0;
+  contatore = 0;
 
-  increment() {
-    this.count++;
+  incrementaContatore() {
+    this.contatore++;
   }
-  decrement() {
-    this.count--;
+  decrementaContatore() {
+    this.contatore--;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FiglioComponent } from '../figlio/figlio.component';
 
 @Component({
@@ -6,20 +6,22 @@ import { FiglioComponent } from '../figlio/figlio.component';
   templateUrl: 'padre.component.html',
   styleUrls: ['padre.component.css'],
 })
-export class PadreComponent implements OnInit {
+export class PadreComponent {
   constructor() {}
-
-  ngOnInit() {}
 
   // deve esserci un selettore di FiglioComponent nel mio Html
   @ViewChild(FiglioComponent, { static: true })
   private child: FiglioComponent;
 
-  increment() {
-    this.child.increment();
+  incrementa() {
+    this.child.incrementaContatore();
   }
 
-  decrement() {
-    this.child.decrement();
+  decrementa() {
+    this.child.decrementaContatore();
+  }
+
+  azzera() {
+    this.child.contatore = 0;
   }
 }
