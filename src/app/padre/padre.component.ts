@@ -10,8 +10,7 @@ export class PadreComponent {
   constructor() {}
 
   // deve esserci un selettore di FiglioComponent nel mio Html
-  @ViewChild(FiglioComponent, { static: true })
-  child: FiglioComponent;
+  @ViewChild(FiglioComponent, { static: true }) child!: FiglioComponent;
 
   incrementa() {
     this.child.incrementaContatore();
