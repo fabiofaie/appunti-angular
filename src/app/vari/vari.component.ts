@@ -1,16 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { Base } from './base'
 @Component({
   selector: 'app-vari',
   templateUrl: './vari.component.html',
-  styleUrls: ['./vari.component.css']
+  styleUrls: ['./vari.component.css'],
 })
-export class VariComponent implements OnInit {
-
-  constructor() { }
-  title = 'esempio del caso';
-  isDisabled = true;
-  ngOnInit() {
-  }
+export class VariComponent extends Base {
 
 }

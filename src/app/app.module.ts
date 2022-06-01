@@ -7,6 +7,7 @@ import { PadreComponent } from './padre/padre.component';
 import { FiglioComponent } from './figlio/figlio.component';
 import { SolohtmlComponent } from './solohtml/solohtml.component';
 import { VariComponent } from './vari/vari.component';
+import { UsoContatoreComponent } from './vari/uso-contatore/uso-contatore.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -15,7 +16,8 @@ import { VariComponent } from './vari/vari.component';
     PadreComponent,
     FiglioComponent,
     SolohtmlComponent,
-    VariComponent
+    VariComponent,
+    UsoContatoreComponent
   ],
   bootstrap: [AppComponent],
 })
